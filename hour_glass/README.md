@@ -64,5 +64,6 @@ The hourglass with the maximum sum (19) is:
 ```
 2 4 4
   2
-1 2 4
-```
+1 2 4```
+
+[This problem set is gotten from HackerRank](https://www.hackerrank.com/challenges/30-2d-arrays/problem)
