@@ -2,8 +2,6 @@ package sub_array_division_chocolate_bar
 
 fun main() {
     println(birthday(arrayOf(4), 4, 1))
-    println("${(0 until 3).toList()}")
-    println("${(0..3).toList()}")
 }
 
 fun birthday(s: Array<Int>, d: Int, m: Int): Int {
