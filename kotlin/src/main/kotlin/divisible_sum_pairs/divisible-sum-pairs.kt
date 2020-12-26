@@ -3,12 +3,8 @@ package divisible_sum_pairs
 import kotlin.math.floor
 
 fun main() {
-//    println(divisibleSumPairs(3, arrayOf(1,3,2,6,1,2)))
-//    println(divisibleSumPairs(5, arrayOf(1,2,3,4,5,6)))
-
-    var a = Math.round(2.5)
-
-    println(a)
+    println(divisibleSumPairs(3, arrayOf(1,3,2,6,1,2)))
+    println(divisibleSumPairs(5, arrayOf(1,2,3,4,5,6)))
 }
 
 // Complete the divisibleSumPairs function below.
