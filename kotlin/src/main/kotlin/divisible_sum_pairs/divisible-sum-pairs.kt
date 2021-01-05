@@ -1,19 +1,25 @@
 package divisible_sum_pairs
 
-import kotlin.math.floor
-
 fun main() {
-    println(divisibleSumPairs(3, arrayOf(1,3,2,6,1,2)))
-    println(divisibleSumPairs(5, arrayOf(1,2,3,4,5,6)))
+    val a = "50 44 77 66 70 58 9 59 74 82 87 15 10 95 10 81 2 4 87 85 28 " +
+            "96 76 18 86 91 94 59 19 58 98 48 38 70 36 38 66 9 72 54 23 23 17 " +
+            "18 8 16 9 56 12 59 73 31 10 62 83 84 28 91 29 22 73 22 3 75 26 31 " +
+            "93 57 15 32 46 74 99 10 15 58 60 53 41 49 71 59 4 20 38 78 1 94 76 " +
+            "5 70 68 42 34 77 28 19 25 20 15"
+
+    val aArray = a.split(" ")
+    val aInt = Array(aArray.size) { aArray[it].toInt() }
+    println(divisibleSumPairs(66, aInt))
+
 }
 
 // Complete the divisibleSumPairs function below.
 fun divisibleSumPairs(k: Int, ar: Array<Int>): Int {
-    // O(n^2)
+    // O(n)
     var count = 0
-    for (i in ar) {
-        for (j in ar) {
-            if (i < j && (i + j) % k == 0) {
+    for (i in ar.indices) {
+        for (j in ar.indices) {
+            if (i < j && (ar[i] + ar[j]) % k == 0) {
                 count ++
             }
         }
