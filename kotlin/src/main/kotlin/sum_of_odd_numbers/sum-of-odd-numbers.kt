@@ -1,7 +1,7 @@
 package sum_of_odd_numbers
 
 fun main() {
-    println(rowSumOddNumbers(1))
+    println(rowSumOddNumbers(3))
 }
 
 fun rowSumOddNumbers(n: Int): Int {

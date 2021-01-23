@@ -16,9 +16,7 @@ fun migratoryBirds(arr: Array<Int>): Int {
         }
     }
 
-//    val map = arr.fold(mutableMapOf<Int, Int>()) {prev, el -> prev.putIfAbsent(el, 1)}
+    val max = birdsMap.values.maxOrNull()
 
-    val max = birdsMap.values.max()
-
-    return birdsMap.filter { it.value == max }.keys.min()!!
+    return birdsMap.filter { it.value == max }.keys.minOrNull()!!
 }
